@@ -12,7 +12,7 @@ Props:
 - audios -> object with data audios
 - size -> value in 'px' or '%'
 
-~~~
+~~~javascript
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Mediaplayer from './component/mediaplayer/Mediaplayer';
