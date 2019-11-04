@@ -8,6 +8,7 @@ Draggable media player for audio
 
 ## Usage
 Insert audio files in src/assets/audio folder.
+
 Props:
 - audios -> object with data audios
 - size -> value in 'px' or '%'
