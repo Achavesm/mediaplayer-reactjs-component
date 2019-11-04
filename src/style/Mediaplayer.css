@@ -1,0 +1,121 @@
+@font-face {
+    font-family: TurretRoad;
+    src: url('../assets/fonts/Turret_Road/TurretRoad-Medium.ttf');
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: TurretRoad;
+    /* font-size: 16px; */
+}
+.flexBox {
+    display: flex;
+}
+.contentCenter {
+    justify-content: center;
+    align-items: center;
+}
+.contentCenterH {
+    justify-content: center;
+}
+.contentCenterV {
+    align-items: center;
+}
+.boxMediaWrapper {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+.Box-media-player {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    transform:rotate(90deg);
+    cursor: move;
+}
+.Box-media-player > svg {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+.Back-bar {
+    stroke:teal;
+    stroke-width: 12%;
+    fill: none;
+    opacity: 0.4;
+}
+.Progress-bar {
+    opacity: 0.6;
+    stroke: teal;
+    stroke-width: 10%;
+    fill: none;
+    stroke-dasharray:0% 271%;
+    transition: 0.2s ease stroke-dasharray;
+}
+.info-buttons {
+    width: 65%;
+    height: 65%;
+    transform: rotate(-90deg);
+    text-align: center;
+}
+.info-buttons .time {
+    position: absolute;
+    top: 17%;
+    width: 100%;
+    height: 50%;
+    font-size: 3.2rem;
+}
+.info-buttons .totalTime {
+    position: absolute;
+    top: 2%;
+    width: 100%;
+    height: 30%;
+    font-size: 1.5rem;
+    opacity: 0.5;
+}
+.info-buttons .audioTitle {
+    position: absolute;
+    bottom: 35%;
+    width: 100%;
+    font-size: 1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.controls {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: rotate(-90deg);
+}
+.controls .playerBtns {
+    position: absolute;
+    bottom: 20%;
+    width: 100%;
+}
+.controls .playerBtns > img {
+    width: 10%;
+    height: auto;
+    cursor: pointer;
+    opacity: 0.7;
+}
+.controls .playerBtns > img:hover {
+    filter: drop-shadow(0px 0px 3px teal);
+}
+.controls .playerBtns .disabled {
+    pointer-events: none;
+    opacity: 0.4;
+}
+.controls .playerBtns .playBtn, .controls .playerBtns .pauseBtn {
+    width: 15%;
+    height: auto;
+}
+.controls .playerBtns .hidden {
+    display: none;
+}
